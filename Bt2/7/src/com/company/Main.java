@@ -32,5 +32,8 @@ public class Main {
                 System.out.println("HCN1 bọc HCN2");
             }
         }
+        else if((x1!=x2)&&(y1!=y2)){
+            // nhiều trường hợp qá e chưa liệt kê ra hết được
+        }
     }
 }
