@@ -24,16 +24,11 @@ public class Main {
         double d2 = sc.nextDouble();
         System.out.println("Nhap chieu rong cua HCN2 = ");
         double r2 = sc.nextDouble();
-        if ((x1==x2) && (y1==y2)){
-            if ((d1<=d2)&&(r1<=r2)){
-                System.out.println("HCN2 bọc HCN1");
-            }
-            else if((d2<=d1)&&(r2<=r1)){
-                System.out.println("HCN1 bọc HCN2");
-            }
+        if ((x1+r1>=x2)&&(x2+r2>=x1)&&(y1+d1>=y2)&&(y2+d2>=y1)){
+         System.out.println("2 HCN giao nhau");
         }
-        else if((x1!=x2)&&(y1!=y2)){
-            // nhiều trường hợp qá e chưa liệt kê ra hết được
+        else {
+            System.out.println("2 HCN không giao nhau");
         }
     }
 }
