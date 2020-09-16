@@ -23,7 +23,7 @@ public class Main {
 
 
 
-        var debt1 = new Debt();
+        var debt1 = new Debt(100000,0.05,50,20);
         Scanner sc = new Scanner(System.in);
         System.out.println("nhap L ");
         debt1.L = sc.nextDouble();
