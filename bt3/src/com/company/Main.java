@@ -38,34 +38,46 @@ public class Main {
 //            System.out.println("Random Integers: "+rd_int1 + rd_int2);
 //            System.out.println("Chúc bạn may mắn lần sau!");
 //        }
-        Scanner sc = new Scanner(System.in);
-        Random rd = new Random();
-        int low = 10;
-        int high = 100;
-        int result = rd.nextInt(high-low) + low;
-        int donvi1 = result*10;
-        int chuc1 = result/10;
+//        Scanner sc = new Scanner(System.in);
+//        Random rd = new Random();
+//        int low = 10;
+//        int high = 100;
+//        int result = rd.nextInt(high-low) + low;
+//        int donvi1 = result*10;
+//        int chuc1 = result/10;
 //        System.out.println(result);
+//
+//
+//        System.out.println("nhap so bat ky co 2 chu so : ");
+//        int input = sc.nextInt();
+//        int donvi = input*10;
+//        int chuc = input/10;
+//        if (donvi == donvi1 && chuc == chuc1){
+//            System.out.println(result);
+//            System.out.println("Bạn đã trúng giải thưởng 10000");
+//        }
+//        else if(donvi==chuc1 && donvi1 == chuc){
+//            System.out.println(result);
+//            System.out.println("Bạn đã trúng giải thưởng 3000");
+//        }
+//        else if(donvi == donvi1 || chuc == chuc1 || donvi==chuc1 || donvi1 == chuc){
+//            System.out.println(result);
+//            System.out.println("Bạn đã trúng giải thưởng 1000");
+//        }else {
+//            System.out.println(result);
+//            System.out.println("Chúc bạn may mắn lần sau!");
+//        }
 
+var input = new  InputNubmer();
+var lotteryCheck = new LottoryChecknumber();
 
-        System.out.println("nhap so bat ky co 2 chu so : ");
-        int input = sc.nextInt();
-        int donvi = input*10;
-        int chuc = input/10;
-        if (donvi == donvi1 && chuc == chuc1){
-            System.out.println(result);
-            System.out.println("Bạn đã trúng giải thưởng 10000");
-        }
-        else if(donvi==chuc1 && donvi1 == chuc){
-            System.out.println(result);
-            System.out.println("Bạn đã trúng giải thưởng 3000");
-        }
-        else if(donvi == donvi1 || chuc == chuc1 || donvi==chuc1 || donvi1 == chuc){
-            System.out.println(result);
-            System.out.println("Bạn đã trúng giải thưởng 1000");
-        }else {
-            System.out.println(result);
-            System.out.println("Chúc bạn may mắn lần sau!");
-        }
+var lotteryNumber= input.getLotteryNumber();
+var number= input.getNumber();
+var award = lotteryCheck.getAward(lotteryNumber, number);
+
+var display = new DisplayAward();
+display.printLottery(lotteryNumber);
+display.printAward(award);
+
     }
 }

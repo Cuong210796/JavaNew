@@ -23,18 +23,17 @@ public class Main {
 
 
 
-        var debt1 = new Debt(100000,0.05,50,20);
+
         Scanner sc = new Scanner(System.in);
         System.out.println("nhap L ");
-        debt1.L = sc.nextDouble();
+        double principle = sc.nextDouble();
         System.out.println("nhap c ");
-        debt1.c = sc.nextDouble();
+        double rate = sc.nextDouble();
         System.out.println("nhap n ");
-        debt1.n = sc.nextDouble();
-        System.out.println("nhap p ");
-        debt1.p = sc.nextDouble();
+        double periods = sc.nextDouble();
 
-        System.out.println(debt1.B());
+        var debt1 = new Debt(principle, rate, periods);
+        debt1.print();
 
     }
 }

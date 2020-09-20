@@ -2,6 +2,7 @@ package com.company;
 
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class Main {
 
@@ -9,12 +10,21 @@ public class Main {
 	/*6. Viết chương trình mô phỏng việc lấy ngẫu nhiên một lá bài từ bộ bài 52 lá và
 	chương trình phải hiển thị lá bài đó là lá bài gì. Ví dụ đầu ra của chương trình như sau:
       "Lá bài bạn vừa rút ra là Q cơ"*/
-       Random rd = new Random();
-         String[] suits = { "Cơ", "Rô", "Tép", "Bích" };
-         String[] ranks = { "Ace","2" ,"3","4","5","6","7","8" ,"9","10" ,"J" ,"Q","K" };
-        String random1 = suits[(int)(Math.random()*3)];
-        String random2 = ranks[(int)(Math.random()*12)];
+//       Random rd = new Random();
+//         String[] suits = { "Cơ", "Rô", "Tép", "Bích" };
+//         String[] ranks = { "Ace","2" ,"3","4","5","6","7","8" ,"9","10" ,"J" ,"Q","K" };
+//        String random1 = suits[(int)(Math.random()*3)];
+//        String random2 = ranks[(int)(Math.random()*12)];
 //        char t = random.charAt ((int)(Math.random()*(random.length() -1))); nếu có nhiều trong string
-        System.out.println("Lá bài bạn vừa rút ra là "+random2+" "+random1);
+//        System.out.println("Lá bài bạn vừa rút ra là "+random2+" "+random1);
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Lá rút ra là ");
+        var cardNumber = new CardNumber();
+        cardNumber.setNumber();
+        var cardType = new CardType(Integer.parseInt(cardNumber.getNumber()));
+        System.out.println(cardNumber.getNumber()+cardType.g);
+
+
     }
 }
