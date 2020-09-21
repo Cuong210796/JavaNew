@@ -7,7 +7,18 @@ public class Main {
       Cau 2: in ra true
    */
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        var circle = new Circle();
+        //a,
+        var rect1 = new Rectangle();
+        rect1.height =40;
+        rect1.width =4;
+//        rect1.getInformation();
+        rect1.display();
+        var rect2 = new Rectangle();
+        rect2.height = 35.9;
+        rect2.width = 3.5;
+//        rect2.getInformation();
+        rect2.display();
+        //b,
+
     }
 }
