@@ -2,12 +2,14 @@ package com.company;
 
 public class CardType {
 
-    public CardType() {
-        Cardtype = cardtype;
+    private String type;
+
+    public String getType() {
+        return type;
     }
 
-    private  String Cardtype;
-  private int number;
-
-
+    public void setType() {
+        String[] suits = { "Cơ", "Rô", "Tép", "Bích" };
+        type = suits[(int)(Math.random()*3)];
+    }
 }
