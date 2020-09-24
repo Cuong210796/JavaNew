@@ -10,42 +10,37 @@ public class OANTT {
     private String bot;
     private String user;
 
-    public String getBot() {
-        return bot;
-    }
+//    public String getBot() {
+//        return bot;
+//    }
 
-    public void setBot() {
+    public String getBot() {
         String[] pr ={"K","B","O"};
         bot = pr[(int)(Math.random()*2)];
         System.out.println(bot);
+        return bot;
     }
 
-    public String getUser() {
-        return user;
+    public void setUser(String user) {
+        this.user = user;
     }
 
-    public void setUser() {
-        if (user == bot){
-            System.out.println("Hòa");
+    public int checkUser() {
+        if (user.equals(bot)) {
+            return 0;
+        } else if (user.equals("B") && bot.equals("K")) {
+            return 1;
+        } else if (user.equals("B") && bot.equals("O")) {
+            return -1;
+        } else if (user.equals("K") && bot.equals("B")) {
+            return -1;
+        } else if (user.equals("K") && bot.equals("O")) {
+            return 1;
+        } else if (user.equals("O") && bot.equals("B")) {
+            return 1;
+        } else if (user.equals("O") && bot.equals("K")) {
+            return -1;
         }
-        else if(user == "B" && bot == "K"){
-            System.out.println("Bạn thắng");
-        }
-        else if(user == "B" && bot == "O"){
-            System.out.println("Bạn thua");;
-        }
-        else if(user == "K" && bot == "B"){
-            System.out.println("Bạn thua");;
-        }
-        else if(user == "K" && bot == "O"){
-            System.out.println("Bạn thắng");;
-        }
-        else if(user == "O" && bot == "B"){
-            System.out.println("Bạn thăng");;
-        }
-        else if(user == "O" && bot == "K"){
-            System.out.println("Bạn thua");;
-        }
+        return  0;
     }
-
 }

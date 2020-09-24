@@ -4,6 +4,7 @@ public class Tivi {
     private String[] channeList;
     private boolean isOn;
     private String currentChannel;
+    private int volume;
 
     public Tivi() {
         isOn = false;
