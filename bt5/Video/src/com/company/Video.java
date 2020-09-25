@@ -1,7 +1,6 @@
 package com.company;
 
 public class Video {
-
     private String fileName;
     private String title;
     private User user;

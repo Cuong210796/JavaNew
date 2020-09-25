@@ -1,5 +1,5 @@
 package com.company;
 
 public interface VideoEncoder {
-    void encode(Video video);
+    void  encode(Video video);
 }
