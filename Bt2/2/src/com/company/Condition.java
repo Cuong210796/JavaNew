@@ -3,7 +3,10 @@ package com.company;
 public class Condition {
 //    private int number;
 
-    public Condition(int number) {
+    public Condition(int number) throws Exception {
+        if (number<0 || number>11){
+            throw new Exception("Năm không hợp lệ !!!");
+        }
         if (number == 0) {
             System.out.println("Tý");
         } else if (number == 1) {
@@ -28,7 +31,8 @@ public class Condition {
             System.out.println("Tuất");
         } else if (number == 11) {
             System.out.println("Hợi");
-        }else
-            System.out.println("so khong hop le!");
+        }
+//        else
+//            System.out.println("so khong hop le!");
     }
 }

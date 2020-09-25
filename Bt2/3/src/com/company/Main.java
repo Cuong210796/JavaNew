@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         /*3. Viết chương trình sinh ra một số ngẫu nhiên (từ 1 - 12) và in ra tháng tương ứng với số đó
                 (ví dụ 1 thì in ra "tháng một", 2 thì in ra "tháng hai")*/
 

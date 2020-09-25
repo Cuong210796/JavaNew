@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         /* 2. Viết chương trình cho phép nhập vào một số nguyên (từ 0 - 11) và kiểm tra năm đó là năm con gì.*/
 
         //Cách 1:

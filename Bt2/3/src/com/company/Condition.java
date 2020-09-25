@@ -1,7 +1,10 @@
 package com.company;
 
 public class Condition {
-    public Condition(int number) {
+    public Condition(int number) throws Exception {
+        if (number<1||number>12){
+            throw new Exception("Không có tháng phù hợp:");
+        }
                 if (number == 1){
                     System.out.println("Tháng Một");
                 }

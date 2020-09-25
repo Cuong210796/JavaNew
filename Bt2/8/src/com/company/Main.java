@@ -73,6 +73,9 @@ public class Main {
         int answer = input.nextInt();
         if (answer == 1)
             day +=set1.getFirstNumber();
+        if (answer!=1 && answer!=0){
+            throw new ArithmeticException("Chọn sai");
+        }
 
         System.out.println("Có phải sinh nhật bạn nằm trong set2?\n");
         System.out.println(set2.getSet());
@@ -80,6 +83,9 @@ public class Main {
         answer = input.nextInt();
         if (answer == 1)
             day +=set2.getFirstNumber();
+        if (answer!=1 && answer!=0){
+            throw new ArithmeticException("Chọn sai");
+        }
 
         System.out.println("Có phải sinh nhật bạn nằm trong set3?\n");
         System.out.println(set3.getSet());
@@ -87,6 +93,9 @@ public class Main {
         answer = input.nextInt();
         if (answer == 1)
             day +=set3.getFirstNumber();
+        if (answer!=1 && answer!=0){
+            throw new ArithmeticException("Chọn sai");
+        }
 
         System.out.println("Có phải sinh nhật bạn nằm trong set4?\n");
         System.out.println(set4.getSet());
@@ -94,6 +103,9 @@ public class Main {
         answer = input.nextInt();
         if (answer == 1)
             day +=set4.getFirstNumber();
+        if (answer!=1 && answer!=0){
+            throw new ArithmeticException("Chọn sai");
+        }
 
         System.out.println("Có phải sinh nhật bạn nằm trong set5?\n");
         System.out.println(set5.getSet());
@@ -102,6 +114,9 @@ public class Main {
         if (answer == 1)
             day +=set5.getFirstNumber();
 
+        if (answer!=1 && answer!=0){
+            throw new ArithmeticException("Chọn sai");
+        }
         System.out.println("Sinh nhật của bạn là ngày "+day+"!");
     }
 }

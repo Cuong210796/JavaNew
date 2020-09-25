@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
                /* 1. Viết chương trình cho phép nhập một năm từ bàn
                 phím và kiểm tra + in ra năm đó có phải năm nhuận hay không */
 
@@ -23,6 +23,5 @@ public class Main {
         System.out.println("Viet 1 nam bat ky : ");
         int year = input.nextInt();
         var year1 = new Year(year);
-
     }
 }
