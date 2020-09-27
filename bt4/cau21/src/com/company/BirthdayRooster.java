@@ -12,6 +12,7 @@ public class BirthdayRooster {
         String bd = date1.newBirthDay(employee1.getBirthday());
         employee1.setBirthday(employee1.getBirthday() + " (" + bd + ")");
         System.out.println(employee1.toString());
+
         String bd1 = date1.newBirthDay(employee2.getBirthday());
         employee2.setBirthday(employee2.getBirthday() + " (" + bd + ")");
         System.out.println(employee2.toString());
