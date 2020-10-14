@@ -14,26 +14,26 @@ public class Main {
 //        textBox2.setText("Hi");
 //        System.out.println(textBox2.text);
 
-//    var employee1 = new Employee(); // để var thay Employee để java tự tìm đến class Employee
-//    employee1.basaSalary = 10_000_000;
-//    employee1.hourlyRate = 200_000;
-//    employee1.extraHour = 12;
+    var employee1 = new Employee(); // để var thay Employee để java tự tìm đến class Employee
+    employee1.setBasaSalary(10_000_000);
+    employee1.setHourlyRate(500_000);
+    employee1.setExtraHour((byte) 12);
+
+        System.out.println(employee1.getbaseSalary());
+
+
+
+
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("nhap L ");
+//        double principle = sc.nextDouble();
+//        System.out.println("nhap c ");
+//        double rate = sc.nextDouble();
+//        System.out.println("nhap n ");
+//        double periods = sc.nextDouble();
 //
-//        System.out.println(employee1.getbaseSalary());
-
-
-
-
-        Scanner sc = new Scanner(System.in);
-        System.out.println("nhap L ");
-        double principle = sc.nextDouble();
-        System.out.println("nhap c ");
-        double rate = sc.nextDouble();
-        System.out.println("nhap n ");
-        double periods = sc.nextDouble();
-
-        var debt1 = new Debt(principle, rate, periods);
-        debt1.print();
+//        var debt1 = new Debt(principle, rate, periods);
+//        debt1.print();
 
     }
 }
