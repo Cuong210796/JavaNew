@@ -29,7 +29,7 @@ public class MercedesS implements Trademark<Car> {
         for (var item : list)
             item.setCompareAttribute(compareAttribute);
         Collections.sort(list);
-        return null;
+        return list;
     }
 
     @Override

@@ -51,12 +51,8 @@ public class Main{
 //        System.out.println(cus + "\n" + "Thông tin các xe khách chọn mua: " + "\n" + mecE.search("E300")
 //                + "\n và \n" +mecC.search("C200"));
         System.out.println("....................");
+        System.out.println(mecC.sort(1));// lấy ra sp mecE
+        System.out.println("....................");
         System.out.println(cus + "\n" + ".............."  + "\n" + "Thông tin xe khách hàng chọn mua: " + "\n" + "Số lượng mua: " + soluong + "\n" + mecE.search("E300"));
-
-
-
-
-
-
     }
 }
