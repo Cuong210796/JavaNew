@@ -46,7 +46,7 @@ public class Main{
 
 
 
-
+//(Tạo hàm swith case để chọn)
         var cus = new Customer(nameCustomer,phone);
 //        System.out.println(cus + "\n" + "Thông tin các xe khách chọn mua: " + "\n" + mecE.search("E300")
 //                + "\n và \n" +mecC.search("C200"));
