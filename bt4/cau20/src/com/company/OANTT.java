@@ -1,8 +1,5 @@
 package com.company;
 
-import java.util.Random;
-import java.util.Scanner;
-
 public class OANTT {
     private String K;
     private String B;
@@ -14,11 +11,10 @@ public class OANTT {
 //        return bot;
 //    }
 
-    public String getBot() {
+    public void getBot() {
         String[] pr ={"K","B","O"};
         bot = pr[(int)(Math.random()*2)];
         System.out.println(bot);
-        return bot;
     }
 
     public void setUser(String user) {

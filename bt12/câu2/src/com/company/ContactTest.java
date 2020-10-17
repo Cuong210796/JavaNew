@@ -12,7 +12,7 @@ public class ContactTest {
         book3.add(new Person("Giang", 22, 'F'));
         book3.add(new Person("Quan", 21, 'M'));
 
-        var list = book3.search("Phuc");
+        var list = book1.search("Giang");
         System.out.println(list);
 
     }

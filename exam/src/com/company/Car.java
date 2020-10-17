@@ -1,5 +1,7 @@
 package com.company;
 
+import java.text.DecimalFormat;
+
 public class Car extends Trademark {
     private String carName;
     private int price;
@@ -69,6 +71,7 @@ public class Car extends Trademark {
 
     @Override
     public String toString() {
-        return "Hãng xe: " + getNameTrademark() + "\n" + "Loại xe: " + this.carName + "\n" + "Giá xe: " + getPrice() + "\n" + "Số lượng: " + this.soluong;
+        DecimalFormat formatter = new DecimalFormat("###,###,### VNĐ");
+        return "Hãng xe: " + getNameTrademark() + "\n" + "Loại xe: " + this.carName + "\n" + "Giá xe: " +  formatter.format(getPrice()) + "\n" + "Số lượng: " + this.soluong;
     }
 }

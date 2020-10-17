@@ -38,9 +38,8 @@ public class Condition {
                 else if(number == 11){
                     System.out.println("Tháng Mười Một");
                 }
-                else if(number == 12){
+                else {
                     System.out.println("Tháng Mười Hai");
-                }else
-                    System.out.println("Số nhập vào không hợp lệ !");
+                }
     }
 }

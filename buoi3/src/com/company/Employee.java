@@ -1,7 +1,7 @@
 package com.company;
 
 public class Employee {
-    private   double basaSalary;
+    private double basaSalary;
     private float hourlyRate;
     private byte extraHour;
 

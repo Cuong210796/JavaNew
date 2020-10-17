@@ -1,20 +1,9 @@
 package com.company;
 
-public class Trademark {
-    private String nameTrademark;
+import java.util.List;
 
-    public Trademark() {
-    }
-
-    public Trademark(String nameTrademark) {
-        this.nameTrademark = nameTrademark;
-    }
-
-    public String getNameTrademark() {
-        return nameTrademark;
-    }
-
-    public void setNameTrademark(String nameTrademark) {
-        this.nameTrademark = nameTrademark;
-    }
+public interface Trademark<T> extends Comparable<T> {
+    void add(T o);
+    T search(String name);
+    List<T> sort(int compareAttribute);
 }

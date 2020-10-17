@@ -27,6 +27,6 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "Tên khách hàng: " + this.nameCustomer + "\t" + "Số điện thoại: " + this.phone;
+        return "Tên khách hàng: " + this.nameCustomer + "\n" + "Số điện thoại: " + this.phone;
     }
 }
